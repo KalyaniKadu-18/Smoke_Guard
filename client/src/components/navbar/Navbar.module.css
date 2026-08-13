@@ -1,0 +1,13 @@
+.MainDiv{
+    display: flex;
+    margin: 2px;
+    padding: 5px;
+    gap: 70px;
+    text-align: center;
+    align-items: center;
+}
+
+.parentDiv{
+  display: flex;
+  gap: 20px;
+}
