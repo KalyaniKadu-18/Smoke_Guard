@@ -1,14 +1,19 @@
-.MainDiv{
+.MainDiv {
     display: flex;
-    margin: 2px;
-    padding: 5px;
-    gap: 70px;
+    padding: 10px;
     text-align: center;
     align-items: center;
-    background-color: var(--bg);
+    background-color: pink;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.parentDiv{
-  display: flex;
-  gap: 20px;
+.parentDiv {
+    display: flex;
+    gap: 20px;
+}
+
+.loginDiv {
+    display: flex;
+    gap: 20px;
 }
