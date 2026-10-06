@@ -1,27 +1,26 @@
 import React from "react";
-import styles from './Footer.module.css';
+import styles from "./Footer.module.css";
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className={styles.footer}>
+      <div className={styles.footerContainer}>
 
-      <div className="footer-container">
-
-        {/* Logo & About */}
-        <div className="footer-box">
-          <h2 className="logo">
+        {/* Brand */}
+        <div className={`${styles.footerBox} ${styles.brandBox}`}>
+          <h2 className={styles.logo}>
             Smoke<span>Guard</span>
           </h2>
 
-          <p>
-            An AI-powered smoke detection system that identifies smoke
-            in real time and automatically triggers an alarm for faster
-            safety response.
+          <p className={styles.description}>
+            An AI-powered smoke detection system designed to detect
+            smoke and provide faster safety alerts through intelligent
+            monitoring.
           </p>
         </div>
 
         {/* Quick Links */}
-        <div className="footer-box">
+        <div className={styles.footerBox}>
           <h3>Quick Links</h3>
 
           <a href="/">Home</a>
@@ -32,18 +31,18 @@ function Footer() {
         </div>
 
         {/* Features */}
-        <div className="footer-box">
+        <div className={styles.footerBox}>
           <h3>Features</h3>
 
           <p>AI Smoke Detection</p>
           <p>Real-Time Monitoring</p>
-          <p>Automatic Alarm</p>
+          <p>Image & Video Detection</p>
           <p>Instant Alerts</p>
           <p>Safety Monitoring</p>
         </div>
 
         {/* Contact */}
-        <div className="footer-box">
+        <div className={styles.footerBox}>
           <h3>Contact Us</h3>
 
           <p>📍 Pune, Maharashtra</p>
@@ -53,16 +52,12 @@ function Footer() {
 
       </div>
 
-      <div className="footer-bottom">
-        <p>
-          © 2026 SmokeGuard. All Rights Reserved.
-        </p>
+      {/* Bottom Footer */}
+      <div className={styles.footerBottom}>
+        <p>© 2026 SmokeGuard. All Rights Reserved.</p>
 
-        <p>
-          AI-Powered Smoke Detection & Safety System
-        </p>
+        <p>AI-Powered Smoke Detection & Safety System</p>
       </div>
-
     </footer>
   );
 }
