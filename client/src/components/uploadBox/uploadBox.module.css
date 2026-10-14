@@ -1,0 +1,44 @@
+.uploadBox {
+  width: 400px;
+  margin: 60px auto;
+  padding: 30px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.uploadBox h2 {
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.uploadBox p {
+  color: var(--secondary);
+  margin-bottom: 20px;
+}
+
+.uploadBox input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.uploadBox button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.uploadBox button:hover {
+  background: var(--primary-dark);
+}
+
+.uploadBox button:disabled {
+  background: var(--text-light);
+  cursor: not-allowed;
+}
